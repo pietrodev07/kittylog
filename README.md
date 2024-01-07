@@ -45,7 +45,7 @@ $ yarn add kittylog
 #### Use ES6 Modules
 
 ```js
-import { kittylog } from "kittylog";
+import kittylog from "kittylog";
 
 kittylog.info("Info...");
 kittylog.success("Success...");
