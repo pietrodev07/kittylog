@@ -7,9 +7,9 @@
   "scripts": {
     "build": "npx tsc",
     "lint": "pnpm dlx @biomejs/biome lint .",
-    "format": "pnpm dlx @biomejs/biome format .",
+    "format": "pnpm dlx @biomejs/biome format . --write",
     "check": "pnpm dlx @biomejs/biome check --apply .",
-    "ci": "pnpm dlx @biomejs/biome ci ."
+    "biome-ci": "pnpm dlx @biomejs/biome ci ."
   },
   "devDependencies": {
     "@biomejs/biome": "1.4.1",
