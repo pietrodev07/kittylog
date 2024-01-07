@@ -13,7 +13,7 @@ You can't find the log you need? Checkout the [Contributing guide](CONTRIBUTING)
 
 ## Table of Contents
 
-  - [⚙️ Instllation](#installation)
+  - [⚙️ Installation](#installation)
   - [⚡️ Basic Usage](#quickstart)
   - [🤔 Contributing](#contributing)
   - [💻 Setup Locally](#setup-locally)
