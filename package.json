@@ -1,9 +1,11 @@
 {
   "name": "kittylog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pretty logs in JavaScript",
+  "author": "pietrodev07",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "lint": "pnpm dlx @biomejs/biome lint .",
