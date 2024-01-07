@@ -5,7 +5,7 @@ import { info } from "../info/info";
 
 type RowData = Record<string, string | number>;
 
-export const tableCSV = (csvFilePath: string): void => {
+export const tableCSV = (csvFilePath: string) => {
 	try {
 		const absolutePath = path.resolve(csvFilePath);
 		const fileContent = readFileSync(absolutePath, "utf-8");

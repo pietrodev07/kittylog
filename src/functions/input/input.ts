@@ -1,4 +1,4 @@
-export const input = (promptText: string): Promise<string> => {
+export const input = (promptText: string) => {
 	return new Promise(resolve => {
 		process.stdin.setEncoding("utf-8");
 		process.stdout.write(`${promptText}·`);
