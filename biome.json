@@ -4,7 +4,15 @@
 		"enabled": true
 	},
 	"files": {
-		"ignore": ["*.js", "*.cjs", "*.mjs", "*.d.ts"]
+		"ignore": [
+			"*dist",
+			"*.png",
+			"*.md",
+			"*.github",
+			"*.yaml",
+			"*tsconfig.json"
+		],
+		"ignoreUnknown": true
 	},
 	"linter": {
 		"enabled": true,
@@ -21,7 +29,9 @@
 			"semicolons": "always",
 			"trailingComma": "es5",
 			"quoteProperties": "asNeeded",
-			"bracketSameLine": true
+			"bracketSameLine": true,
+			"indentWidth": 2,
+			"indentStyle": "space"
 		}
 	}
 }
