@@ -1,0 +1,24 @@
+name: Bug report
+description: Create a report to help us improve
+body:
+- type: markdown 
+  attributes:
+    value: Thanks for taking the time to fill out this bug!
+- type: textarea
+  id: repro
+  attributes:
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: 
+    render: bash
+  validations:
+    required: true
+- type: dropdown
+  id: assignee
+  attributes:
+   label: Do you want to work on this issue?
+   multiple: false
+   options:
+    - "No"
+    - "Yes"
+   default: 0
