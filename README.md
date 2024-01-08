@@ -62,7 +62,7 @@ const kittylog = require("kittylog");
 
 kittylog.info("Info...");
 kittylog.success("Success...");
-kittylog.warn("Warn...");
+kittylog.warning("Warn...");
 kittylog.error("Error...");
 ```
 
