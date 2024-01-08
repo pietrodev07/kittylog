@@ -9,6 +9,8 @@ Pretty logs in JavaScript
 
 KittyLog is a JavaScript library that makes your logs visually appealing and easy to understand. It helps organize information clearly and adds colors and styles to make messages stand out.
 
+![Screenshot](./images/screenshot.png)
+
 You can't find the log you need? Checkout the [Contributing guide](CONTRIBUTING) and open an issue to let us know and, if you wish, you can open a PR to have the feature inclued in the command!
 
 ## Table of Contents
