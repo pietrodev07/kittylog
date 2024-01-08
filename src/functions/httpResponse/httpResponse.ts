@@ -13,7 +13,6 @@ export const httpResponse = (response: Response) => {
 	const type = colorizeText("Type;", COLORS.yellow);
 	const ok = colorizeText("Ok:", COLORS.red);
 	const cookies = colorizeText("Cookies:", COLORS.blue);
-	const body = colorizeText("Body:", COLORS.magenta);
 
 	console.log(`${label} - ${timestampLabel}`);
 	console.log();
@@ -24,11 +23,4 @@ export const httpResponse = (response: Response) => {
 	console.log(`${status} ${response.status}`);
 	console.log(`${headers}`, response.headers);
 	console.log(`${cookies}`, response.headers.get("cookies"));
-
-	const getData = async () => {
-		const data = await response.json();
-		console.log(`${body}`, data);
-	};
-
-	getData();
 };
