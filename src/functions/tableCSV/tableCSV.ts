@@ -1,26 +1,17 @@
-import { readFileSync } from "fs";
-import path from "path";
-import { error } from "../error/error";
 import { info } from "../info/info";
 
 type RowData = Record<string, string | number>;
 
-export const tableCSV = (csvFilePath: string) => {
-	try {
-		const absolutePath = path.resolve(csvFilePath);
-		const fileContent = readFileSync(absolutePath, "utf-8");
-		const rows = fileContent.split("\n").map(row => row.split(","));
+export const tableCSV = (fileName: string, fileContent: string) => {
+	const rows = fileContent.split("\n").map(row => row.split(","));
 
-		const headers = rows[0].map(header => header.trim());
-		const data = parseCSVData(rows.slice(1), headers);
+	const headers = rows[0].map(header => header.trim());
+	const data = parseCSVData(rows.slice(1), headers);
 
-		const fileNameLabel = `File: ${csvFilePath}`;
-		info(fileNameLabel);
+	const fileNameLabel = `File: ${fileName}`;
+	info(fileNameLabel);
 
-		console.table(data, headers);
-	} catch (err) {
-		error(`An error occurred while reading the CSV file: ${err}`);
-	}
+	console.table(data, headers);
 };
 
 const parseCSVData = (rows: string[][], headers: string[]): RowData[] => {
