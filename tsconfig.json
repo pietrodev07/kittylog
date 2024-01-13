@@ -2,11 +2,11 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "target": "es2015",
+    "downlevelIteration": true,
     "declaration": true,
     "outDir": "./dist",
     "esModuleInterop": true
   },
-  "include": [
-    "src/**/*"
-  ],
+  "include": ["src/**/*"]
 }
