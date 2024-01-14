@@ -22,7 +22,7 @@ You can't find the log you need? Checkout the [Contributing guide](CONTRIBUTING)
   - [📖 License](#license)
 
 
-### ⚙️ Installation
+### <a id="installation"></a> ⚙️ Installation
 
 Using npm:
 
@@ -42,7 +42,7 @@ Using yarn:
 $ yarn add kittylog
 ```
 
-### ⚡️ Quickstart
+### <a id="quickstart"></a> ⚡️ Quickstart
 
 #### Use ES6 Modules
 
@@ -66,17 +66,17 @@ kittylog.warning("Warn...");
 kittylog.error("Error...");
 ```
 
-### 🤔 Contributing
+### <a id="contributing"></a> 🤔 Contributing
 
 Read the [Contributing guide](./CONTRIBUTING.md) for the contribution process
 
-### 💻 Setup locally
+### <a id="setup-locally"></a> 💻 Setup locally
 
 If you're cloning the repo, both for contributing or just to start taking confidence with the code just follow these steps:
 
     1. clone the repo with `git clone https://github.com/pietrodev07/kittylog`
     2. inside the folder run `pnpm install`
 
-### 📖 License
+### <a id="license"></a> 📖 License
 
-[MIT](LICENSE)
+This project was developed and built under [MIT](LICENSE) license
