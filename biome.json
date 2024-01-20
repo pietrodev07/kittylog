@@ -4,14 +4,7 @@
 		"enabled": true
 	},
 	"files": {
-		"ignore": [
-			"*dist",
-			"*.png",
-			"*.md",
-			"*.github",
-			"*.yaml",
-			"*tsconfig.json"
-		],
+		"ignore": ["*dist", "*.png", "*.md", "*.github", "*.yaml", "cache"],
 		"ignoreUnknown": true
 	},
 	"linter": {
