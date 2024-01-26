@@ -7,6 +7,8 @@ export default defineConfig({
 
   title: "Kittylog",
   description: "Pretty logs in JavaScript!",
+  head: [["link", { rel: "icon", href: "/logo.ico" }]],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
