@@ -3,7 +3,9 @@
 ```js
 import kittylog from "kittylog";
 
-kittylog.debug("Loding data...", 1000);
+kittylog.performance("Process name");
+  // your code
+kittylog.performanceEnd("Process name");
 ```
 
 ::: details Performance Parameters
@@ -13,7 +15,6 @@ kittylog.debug("Loding data...", 1000);
 ```ts
 interface PerformanceParameters {
   action: string;
-  timeTaken: number;
 }
 ```
 
