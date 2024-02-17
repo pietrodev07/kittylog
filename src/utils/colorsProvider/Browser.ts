@@ -2,7 +2,7 @@ export const colorizeText = (label: string, color: string) => {
   return [`%c${label}`, `color: ${color};`];
 };
 
-export const buidlCompleteMessage = (labels: Array<Array<string>>) => {
+export const buildCompleteMessage = (labels: Array<Array<string>>) => {
   const completeMessage = [];
 
   for (let i = 0; i < labels.length; i++) {

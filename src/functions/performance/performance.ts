@@ -11,7 +11,7 @@ export const performance = (action: string) => {
 
   return {
     end: () => {
-      const { colorizeText, buidlCompleteMessage } = colorsProvider;
+      const { colorizeText, buildCompleteMessage } = colorsProvider;
       const { start } = performanceStack.pop();
 
       const label = colorizeText("[PERFORMANCE]", COLORS.cyan);
@@ -19,7 +19,7 @@ export const performance = (action: string) => {
       const end = getPerformanceTimestamp.now();
       const duration = end - start;
 
-      console.log(...buidlCompleteMessage([label]), `${action}:`, `${duration.toFixed(3)}ms`);
+      console.log(...buildCompleteMessage([label]), `${action}:`, `${duration.toFixed(3)}ms`);
     },
   };
 };

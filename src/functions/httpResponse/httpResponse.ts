@@ -2,7 +2,7 @@ import { COLORS } from "../../constants";
 import { colorsProvider } from "../../global";
 
 export const httpResponse = (response: Response) => {
-  const { colorizeText, buidlCompleteMessage } = colorsProvider;
+  const { colorizeText, buildCompleteMessage } = colorsProvider;
   const timestamp = new Date().toLocaleTimeString();
 
   const label = colorizeText("[HTTP RESPONSE]", COLORS.blue);
@@ -15,13 +15,13 @@ export const httpResponse = (response: Response) => {
   const ok = colorizeText("Ok:", COLORS.red);
   const cookies = colorizeText("Cookies:", COLORS.blue);
 
-  console.log(...buidlCompleteMessage([label, timestampLabel]));
+  console.log(...buildCompleteMessage([label, timestampLabel]));
   console.log();
 
-  console.log(...buidlCompleteMessage([url]), response.url);
-  console.log(...buidlCompleteMessage([ok]), response.ok);
-  console.log(...buidlCompleteMessage([type]), response.type);
-  console.log(...buidlCompleteMessage([status]), response.status);
-  console.log(...buidlCompleteMessage([headers]), response.headers);
-  console.log(...buidlCompleteMessage([cookies]), response.headers.get("cookies"));
+  console.log(...buildCompleteMessage([url]), response.url);
+  console.log(...buildCompleteMessage([ok]), response.ok);
+  console.log(...buildCompleteMessage([type]), response.type);
+  console.log(...buildCompleteMessage([status]), response.status);
+  console.log(...buildCompleteMessage([headers]), response.headers);
+  console.log(...buildCompleteMessage([cookies]), response.headers.get("cookies"));
 };

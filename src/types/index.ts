@@ -12,5 +12,5 @@ export type Platform = "NODE" | "BROWSER";
 
 export interface PlatformProviderProtocol {
   colorizeText(label: string, color: string): Array<string>;
-  buidlCompleteMessage?(labels: Array<Array<string>>): Array<string>;
+  buildCompleteMessage?(labels: Array<Array<string>>): Array<string>;
 }
