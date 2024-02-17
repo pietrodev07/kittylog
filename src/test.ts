@@ -4,7 +4,15 @@ kittylog.info("Info...");
 kittylog.success("Success...");
 kittylog.warning("Warn...");
 kittylog.error("Error...");
+kittylog.custom("magenta", "CUSTOM", "Custom...");
+
+kittylog.blank("dashed", "yellow");
 kittylog.error(new Error("Error..."));
+
+kittylog.blank("dashed", "yellow");
+kittylog.debug("User data", { id: 1, username: "pietrodev07" });
+
+kittylog.blank("dashed", "yellow");
 
 const whileLoopTest = kittylog.performance("external performance test #1");
 

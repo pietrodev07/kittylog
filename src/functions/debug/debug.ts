@@ -1,12 +1,13 @@
 import { COLORS } from "../../constants";
-import { colorizeText } from "../../utils/colorizeText";
+import { colorsProvider } from "../../global";
 
 export const debug = (message: string, data: unknown) => {
+  const { colorizeText, buidlCompleteMessage } = colorsProvider;
+
   const timestamp = new Date().toLocaleTimeString();
 
   const label = colorizeText("[DEBUG]", COLORS.yellow);
   const timestampLabel = colorizeText(timestamp, COLORS.magenta);
 
-  console.log(`${label} - ${timestampLabel}`);
-  console.log(`${message}:`, data);
+  console.log(...buidlCompleteMessage([label, timestampLabel]), `\n${message}:`, data);
 };

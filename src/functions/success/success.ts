@@ -1,9 +1,11 @@
 import { COLORS } from "../../constants";
-import { colorizeText } from "../../utils/colorizeText";
+import { colorsProvider } from "../../global";
 
 export const success = (message: string) => {
+  const { colorizeText, buidlCompleteMessage } = colorsProvider;
+
   const label = colorizeText("[SUCCESS]", COLORS.green);
   const messageColorized = colorizeText(message, COLORS.green);
 
-  console.log(`${label} ${messageColorized}`);
+  console.log(...buidlCompleteMessage([label, messageColorized]));
 };
