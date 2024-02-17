@@ -1,6 +1,6 @@
 {
   "name": "kittylog",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Pretty logs in JavaScript",
   "author": "pietrodev07",
   "main": "dist/index.js",
