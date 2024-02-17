@@ -3,9 +3,9 @@
 ```js
 import kittylog from "kittylog";
 
-kittylog.performance("Process name");
+const performanceTest = kittylog.performance("Process name");
   // your code
-kittylog.performanceEnd("Process name");
+performanceTest.end();
 ```
 
 ::: details Performance Parameters
