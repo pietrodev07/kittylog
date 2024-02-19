@@ -51,7 +51,10 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/pietrodev07/kittylog" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/pietrodev07/kittylog" },
+      { icon: "discord", link: "https://discord.gg/tkVxmEmdCn" },
+    ],
 
     footer: {
       message: "Released under the MIT License.",

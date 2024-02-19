@@ -1,13 +1,25 @@
 import { COLORS } from "../../constants";
-import { colorizeText } from "../../utils/colorizeText";
+import { colorsProvider } from "../../global";
+import { PerformanceStack } from "../../types";
+
+const performanceStack: PerformanceStack[] = [];
+const getPerformanceTimestamp = global.performance;
 
 export const performance = (action: string) => {
-  const label = colorizeText("[PERFORMANCE]", COLORS.cyan);
+  const start = getPerformanceTimestamp.now();
+  performanceStack.push({ action, start });
 
-  console.time(`${label} ${action}`);
-};
+  return {
+    end: () => {
+      const { colorizeText, buildCompleteMessage } = colorsProvider;
+      const { start } = performanceStack.pop();
 
-export const performanceEnd = (action: string) => {
-  const label = colorizeText("[PERFORMANCE]", COLORS.cyan);
-  console.timeEnd(`${label} ${action}`);
+      const label = colorizeText("[PERFORMANCE]", COLORS.cyan);
+
+      const end = getPerformanceTimestamp.now();
+      const duration = end - start;
+
+      console.log(...buildCompleteMessage([label]), `${action}:`, `${duration.toFixed(3)}ms`);
+    },
+  };
 };

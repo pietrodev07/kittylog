@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ES6",
+    "moduleResolution": "Bundler",
     "target": "es2015",
-    "downlevelIteration": true,
-    "declaration": true,
     "outDir": "./dist",
     "esModuleInterop": true
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ]
 }

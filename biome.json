@@ -4,7 +4,7 @@
 		"enabled": true
 	},
 	"files": {
-		"ignore": ["*dist", "*.png", "*.md", "*.github", "*.yaml", "cache"],
+		"ignore": ["dist", "*.png", "*.md", "*.github", "*.yaml", "cache"],
 		"ignoreUnknown": true
 	},
 	"linter": {

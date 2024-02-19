@@ -4,7 +4,7 @@ export { error } from "./error/error";
 export { group, groupEnd } from "./group/group";
 export { httpResponse } from "./httpResponse/httpResponse";
 export { info } from "./info/info";
-export { performance, performanceEnd } from "./performance/performance";
+export { performance } from "./performance/performance";
 export { success } from "./success/success";
 export { table } from "./table/table";
 export { tableCSV } from "./tableCSV/tableCSV";
