@@ -37,6 +37,7 @@ export default defineConfig({
           { text: "Error", link: "/guide/log-types/error" },
           { text: "Debug", link: "/guide/log-types/debug" },
           { text: "Performance", link: "/guide/log-types/performance" },
+          { text: "Group", link: "/guide/log-types/group" },
           { text: "Blank", link: "/guide/log-types/blank" },
           { text: "Table", link: "/guide/log-types/table" },
           { text: "Table from JSON", link: "/guide/log-types/table-json" },
