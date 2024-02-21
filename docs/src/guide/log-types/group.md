@@ -1,4 +1,4 @@
-# Blank
+# Group
 
 ```ts
 import kittylog from "kittylog";
@@ -7,13 +7,13 @@ kittylog.group("group title"); // start group
   // your code
 kittylog.groupEnd();
 
-kittylog.groupCollapsed("group title"); // start group 
+kittylog.group("group title", "red"); // start group with color of your choice
   // your code
-  // the group will be collpased only in browser environment
 kittylog.groupEnd();
 
-kittylog.blank("group title", "red"); // start group with color of your choice
+kittylog.group("group title", "red", "COLLAPSED"); // start group with color and show it collapsed 
   // your code
+  // the group will be collpased only in browser environment
 kittylog.groupEnd();
 ```
 
@@ -25,11 +25,7 @@ kittylog.groupEnd();
 interface GroupParameters {
   title: string;
   color?: Color;
-}
-
-interface GroupCollapsedParameters {
-  title: string;
-  color?: Color;
+  type?: GroupType
 }
 
 type Color =
@@ -48,6 +44,10 @@ type Color =
   | "magenta"
   | "cyan"
   | "white";
+
+type GroupType = 
+  | "NORMAL"
+  | "COLLAPSED"
 ```
  
 :::
