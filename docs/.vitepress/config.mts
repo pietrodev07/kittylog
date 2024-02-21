@@ -43,6 +43,7 @@ export default defineConfig({
           { text: "Table from CSV", link: "/guide/log-types/table-csv" },
           { text: "HTTP Response", link: "/guide/log-types/http-response" },
           { text: "Custom", link: "/guide/log-types/custom" },
+          { text: "Box", link: "/guide/log-types/box" },
         ],
       },
       {
