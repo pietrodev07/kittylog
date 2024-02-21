@@ -14,6 +14,8 @@ kittylog.debug("User data", { id: 1, username: "pietrodev07" });
 
 kittylog.blank("dashed", "yellow");
 
+kittylog.box("Hello, World! From a box!");
+
 const whileLoopTest = kittylog.performance("external performance test #1");
 
 let i = 0;
