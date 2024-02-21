@@ -1,7 +1,7 @@
 export { input } from "./input/input";
 export { debug } from "./debug/debug";
 export { error } from "./error/error";
-export { group, groupCollapsed, groupEnd } from "./group/group";
+export { group, groupEnd } from "./group/group";
 export { httpResponse } from "./httpResponse/httpResponse";
 export { info } from "./info/info";
 export { performance } from "./performance/performance";

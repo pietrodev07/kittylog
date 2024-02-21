@@ -9,6 +9,7 @@ export interface PerformanceStack {
 }
 
 export type Platform = "NODE" | "BROWSER";
+export type GroupType = "COLLAPSED" | "NORMAL";
 
 export interface PlatformProviderProtocol {
   colorizeText(label: string, color: string): Array<string>;
