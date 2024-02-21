@@ -11,3 +11,4 @@ export { tableJSON } from "./tableJSON/tableJSON";
 export { warning } from "./warning/warning";
 export { blank } from "./blank/blank";
 export { custom } from "./custom/custom";
+export { box } from "./box/box";
