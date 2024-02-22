@@ -14,7 +14,7 @@ kittylog.debug("User data", { id: 1, username: "pietrodev07" });
 
 kittylog.blank("dashed", "yellow");
 
-kittylog.box("Hello, World! From a box!");
+kittylog.box("Hello, World!", "This is a test...");
 
 const whileLoopTest = kittylog.performance("external performance test #1");
 
@@ -27,12 +27,17 @@ whileLoopTest.end();
 
 const forLoopTest = kittylog.performance("external performance test #2");
 
-for (let i = 0; i < 100; i++) {}
+for (let i = 0; i < 100; i++) { }
 
 const internalTest = kittylog.performance("internal performance test");
 
-for (let i = 0; i < 100; i++) {}
+for (let i = 0; i < 100; i++) { }
 
 internalTest.end();
 
 forLoopTest.end();
+
+kittylog.info("Info...", "This is a test...");
+kittylog.success("Success...", "This is a test...");
+kittylog.warning("Warn...", "This is a test...");
+kittylog.error("Error...", "This is a test...");
