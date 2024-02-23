@@ -1,10 +1,14 @@
 import { kittylog } from "./index";
 
+const group = kittylog.group("Group #1", "blue");
+
 kittylog.info("Info...");
 kittylog.success("Success...");
 kittylog.warning("Warn...");
 kittylog.error("Error...");
 kittylog.custom("magenta", "CUSTOM", "Custom...");
+
+group.end();
 
 kittylog.blank("dashed", "yellow");
 kittylog.error(new Error("Error..."));
