@@ -17,3 +17,13 @@ interface ErrorParameters {
 ```
 
 :::
+
+::: tip Support for rest parameters
+
+`error` support [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+```js
+kittylog.error("Error", ...)
+```
+
+::: 
