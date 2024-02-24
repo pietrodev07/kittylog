@@ -45,3 +45,4 @@ kittylog.info("Info...", "This is a test...");
 kittylog.success("Success...", "This is a test...");
 kittylog.warning("Warn...", "This is a test...");
 kittylog.error("Error...", "This is a test...");
+kittylog.custom("magenta", "CUSTOM", "Custom...", "This is a test...");
