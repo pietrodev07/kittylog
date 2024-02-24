@@ -3,18 +3,18 @@
 ```ts
 import kittylog from "kittylog";
 
-kittylog.group("group title"); // start group 
+const group = kittylog.group("group title"); // start group 
   // your code
-kittylog.groupEnd();
+group.end();
 
-kittylog.group("group title", "red"); // start group with color of your choice
+const secondGroup = kittylog.group("group title", "red"); // start group with color of your choice
   // your code
-kittylog.groupEnd();
+secondGroup.end();
 
-kittylog.group("group title", "red", "COLLAPSED"); // start group with color and show it collapsed 
+const thirdGroup = kittylog.group("group title", "red", "COLLAPSED"); // start group with color and show it collapsed 
   // your code
   // the group will be collpased only in browser environment
-kittylog.groupEnd();
+thirdGroup.end();
 ```
 
 ::: details Group Parameters
