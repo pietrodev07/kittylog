@@ -31,11 +31,11 @@ whileLoopTest.end();
 
 const forLoopTest = kittylog.performance("external performance test #2");
 
-for (let i = 0; i < 100; i++) { }
+for (let i = 0; i < 100; i++) {}
 
 const internalTest = kittylog.performance("internal performance test");
 
-for (let i = 0; i < 100; i++) { }
+for (let i = 0; i < 100; i++) {}
 
 internalTest.end();
 
