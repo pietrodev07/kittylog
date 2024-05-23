@@ -36,3 +36,13 @@ type Color =
 ```
 
 :::
+
+::: tip Support for rest parameters
+
+`custom` support [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+```js
+kittylog.custom("magenta", "CUSTOM", "Hello", ...)
+```
+
+::: 
