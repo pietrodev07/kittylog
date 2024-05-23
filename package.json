@@ -1,12 +1,29 @@
 {
   "name": "kittylog",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Pretty logs in JavaScript",
   "author": "pietrodev07",
+  "repository": {},
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "license": "MIT",
+  "keywords": [
+    "log",
+    "pretty",
+    "format",
+    "output",
+    "style",
+    "logger",
+    "color",
+    "formatting",
+    "logging",
+    "console",
+    "beautiful",
+    "enhance",
+    "readable",
+    "messages"
+  ],
   "scripts": {
     "build": "rollup -c",
     "lint": "pnpm dlx @biomejs/biome lint .",
@@ -17,13 +34,13 @@
     "test:node": "tsx src/test.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.4.1",
+    "@biomejs/biome": "1.7.3",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^20.10.6",
-    "rollup": "^4.12.0",
-    "rollup-plugin-dts": "^6.1.0",
+    "@types/node": "^20.12.12",
+    "rollup": "^4.18.0",
+    "rollup-plugin-dts": "^6.1.1",
     "tslib": "^2.6.2",
-    "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
   }
 }
